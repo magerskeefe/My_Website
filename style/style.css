@@ -1,0 +1,243 @@
+html {
+	position: relative; /*allow for the footer to be position absolute and know where its starting point is*/
+	min-height: 100%; /*ensures we use the whole screen size for height so the footer can be shown at the bottom*/
+}
+
+body {
+	margin: 0 0 265px; /*make sure there is a margin at the bottom so footer doesnt overlap*/
+	background: #f5f5f0; /*w3schools color picker, 3rd from bottom on lefthandside, 95%*/
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto; /*horizontally center the element within its container*/
+	font-family: 'Roboto Condensed', sans-serif; /*Container affects the header and the footer div*/
+}
+
+/* This is my Header CSS*/
+header {
+	background: #3d3d29; /*w3schools color picker, 3rd from bottom on lefthandside, 20%*/
+	color: #f5f5f0; /*w3schools color picker, 3rd from bottom on lefthandside, 95%*/
+	height: 98px;
+}
+
+.logo {
+	font-size: 200%; /*Font size for name at top*/
+	float: left; /*allows for navigation to float right and be in the same "line"*/
+	padding-top: 35px; /*this should be close to top padding for .main-menu ul li so that they are in the same "line"*/
+}
+
+.logo h1 {
+	text-transform: uppercase;
+}
+
+.logo h1 a {
+	text-decoration: none;
+	color: #f5f5f0; /*w3schools color picker, 3rd from bottom on lefthandside, 95%*/
+}
+
+.main-menu {
+	float: right; /*places navigation on the right side*/
+}
+
+.main-menu ul li {
+	display: block; /* always for individual styling of links*/
+	float: left; /* displays the menu items next to each other*/
+	padding-top: 41px; /*this should equal top padding on .main-menu ul la a*/
+}
+
+.main-menu ul li a {
+	text-decoration: none;
+	color: #f5f5f0; /*w3schools color picker, 3rd from bottom on lefthandside, 95%*/
+	padding-top: 41px; /*this should equal top padding on .main-menu ul la*/
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 40px;
+}
+
+.main-menu ul li a:hover {
+	background-color: #E88E0C; /*orange*/
+}
+/*This is the end of my Header CSS*/
+
+/*This is my Main CSS*/
+main {
+	margin-bottom: 265px;
+}
+
+.hero {
+	padding-top: 80px;
+}
+
+.hero img {
+	width: 30%;
+	height: 70%;
+	border-radius: 5%;
+	border: 5px solid #ddd;
+	float: right;
+}
+
+/*#image_description {
+	float: right;
+}*/
+
+/*This is the end of my Main CSS*/
+
+/*This is my skills section CSS*/
+.skills {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #999966; /*w3schools color picker, 3rd from bottom on lefthandside, 50%*/
+	padding-left: 50px;
+}
+
+.skills h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.skills ul li {
+	padding-top: 20px;
+}
+
+.circle {
+	display: inline; /*make each circle in my experience section inline with the bullet points*/
+}
+
+.skills i {
+	padding-right: 5px; /*space between circle and text in experience section*/
+}
+
+/*This is the end of my skills section CSS*/
+
+/*This is my community_involvement CSS*/
+.community_involvement {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #999966; /*w3schools color picker, 3rd from bottom on lefthandside, 50%*/
+	padding-left: 50px;
+}
+
+.community_involvement h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.community_involvement ul li {
+	padding-top: 20px;
+}
+
+.community_involvement ul li a {
+	text-decoration: none;
+	color: #999966; /*w3schools color picker, 3rd from bottom on lefthandside, 50%*/
+}
+
+.community_involvement ul li a:hover {
+	color: #E88E0C; /*orange*/
+}
+/*This is the end of my community_involvement CSS*/
+
+/*This is my interests CSS*/
+.interests {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #999966; /*w3schools color picker, 3rd from bottom on lefthandside, 50%*/
+	padding-left: 50px;
+}
+
+.interests h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.interests h3 {
+	font-size: 20px;
+	padding-top: 40px;
+}
+
+.interests ul li {
+	padding-top: 20px;
+}
+/*This is the end of my interests CSS*/
+
+/*This is my contact_information CSS*/
+.contact_information {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #999966; /*w3schools color picker, 3rd from bottom on lefthandside, 50%*/
+	padding-left: 50px;
+}
+
+.contact_information h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.contact_information ul li {
+	padding-top: 20px;
+}
+
+.contact_information ul li a {
+	text-decoration: none;
+	color: #999966; /*w3schools color picker, 3rd from bottom on lefthandside, 50%*/
+}
+
+.contact_information ul li a:hover {
+	color: #E88E0C; /*orange*/
+}
+
+.contact_information ul li a i {
+	padding-right: 20px;
+}
+/*This is the end of my contact_information CSS*/
+
+/* This is my Footer CSS*/
+footer {
+	background: #3d3d29; /*w3schools color picker, 3rd from bottom on lefthandside, 20%*/
+	color: #f5f5f0; /*w3schools color picker, 3rd from bottom on lefthandside, 95%*/
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+}
+
+.footer-menu {
+	float: left;
+}
+
+.footer-menu ul li {
+	display: block; /* always for individual styling of links*/
+	float: left; /* displays the menu items next to each other*/
+	padding-right: 30px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer-menu ul li a {
+	text-decoration: none;
+	color: #f5f5f0; /*w3schools color picker, 3rd from bottom on lefthandside, 95%*/
+}
+
+.footer-menu ul li a:hover {
+	color: #999966; /*w3schools color picker, 3rd from bottom on lefthandside, 50%*/
+}
+
+.social {
+	float: right;
+}
+
+.social ul li {
+	display: block; /* always for individual styling of links*/
+	float: left; /* displays the menu items next to each other*/
+	padding-right: 30px;
+	padding-top: 50px;
+}
+
+.social ul li a {
+	color: #f5f5f0; /*w3schools color picker, 3rd from bottom on lefthandside, 95%*/
+}
+
+.social ul li a:hover {
+	color: #999966; /*w3schools color picker, 3rd from bottom on lefthandside, 50%*/
+}
+
+.social ul li a i {
+
+}
+/*This is the end of my Footer CSS*/
